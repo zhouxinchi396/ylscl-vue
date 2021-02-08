@@ -11,4 +11,5 @@ const config: SharedConfig = {
   },
 };
 
+
 module.exports = config;
