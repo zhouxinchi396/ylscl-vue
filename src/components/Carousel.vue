@@ -4,7 +4,7 @@
     @mouseenter="openCarousel(false)"
     @mouseleave="openCarousel(true)"
   >
-    <router-link to="/product"><img :src="path" /></router-link>
+    <router-link to="/product"><img :src="path.imgUrl" /></router-link>
     <div id="icon">
       <div
         v-for="icon in list"
@@ -22,7 +22,7 @@ export default defineComponent({
   setup() {
     let index = 0;
     let timer: any;
-    const foloderPath = "/@/assets/images/";
+    const foloderPath = "../assets/images/";
     const list = reactive([
       {
         id: "circle1",
@@ -44,6 +44,8 @@ export default defineComponent({
       },
     ]);
     const path = ref(foloderPath + list[0].img);
+    console.log(path);
+
     const change = (index: number) => {
       list
         .filter((icon) => (icon.style = "active"))
