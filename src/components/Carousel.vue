@@ -4,7 +4,7 @@
     @mouseenter="openCarousel(false)"
     @mouseleave="openCarousel(true)"
   >
-    <router-link to="/product"><img :src="path.imgUrl" /></router-link>
+    <router-link to="/product"><img :src="path" /></router-link>
     <div id="icon">
       <div
         v-for="icon in list"
