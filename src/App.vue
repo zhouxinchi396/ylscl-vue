@@ -4,9 +4,9 @@
   <Footer />
 </template>
 <script lang="ts">
-import Headers from "./components/Headers.vue";
-import Footer from "./components/Footer.vue";
-import Home from "./views/Home.vue";
+import Headers from "/@/components/Headers.vue";
+import Footer from "/@/components/Footer.vue";
+import Home from "/@/views/Home.vue";
 
 import { defineComponent, onMounted, ref } from "vue";
 export default defineComponent({

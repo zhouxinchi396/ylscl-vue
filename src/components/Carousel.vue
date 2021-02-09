@@ -22,7 +22,7 @@ export default defineComponent({
   setup() {
     let index = 0;
     let timer: any;
-    const foloderPath = "../assets/images/";
+    const foloderPath = "/static/images/";
     const list = reactive([
       {
         id: "circle1",
@@ -119,10 +119,10 @@ img {
   height: 24px;
 }
 .normal {
-  background-image: url("../assets/images/circle.png");
+  background-image: url("/static/images/circle.png");
 }
 .active {
-  background-image: url("../assets/images/disc.png");
+  background-image: url("/static/images/disc.png");
 }
 /* ================================================  */
 </style>
